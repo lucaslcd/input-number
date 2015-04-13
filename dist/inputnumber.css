@@ -1,0 +1,21 @@
+.input-number-container {
+	display:inline-block;
+	position:relative;
+}
+.input-number-arrow {
+	position:absolute;
+	cursor:pointer;
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;	
+	border-bottom: 5px solid black;
+	top:3px;
+	right:3px;
+}
+.input-number-arrow.arrow-down {
+	top:auto;
+	bottom:3px;
+	border-bottom:0;
+	border-top:5px solid black;
+}

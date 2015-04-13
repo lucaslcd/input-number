@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Input Number Polyfill Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="dist/jquery.inputnumber.min.js"></script>
+        <link rel="stylesheet" href="dist/inputnumber.css" />
+    </head>
+    <body>
+		<h1>Input Number Polyfill Demo</h1>
+        <p>This is a normal HTML5 input number : <br /><input type="number" /></p>
+        <p>This is a modified input that supports ie8 and styling : <br /><input type="number" class="modify-me" /></p>
+		<script>
+			$().ready(function(){
+				$('.modify-me').inputNumber();
+			});
+		</script>
+    </body>
+</html>
